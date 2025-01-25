@@ -7,7 +7,7 @@ public class Cell {
     // Content of this cell (can be empty, cross, or nought)
     Player content;
     // Row and column indices of this cell
-    int row, col;
+int  row, col;
 
     /** Constructor to initialize this cell with the specified row and col */
     public Cell(int row, int col) {
@@ -16,7 +16,7 @@ public class Cell {
         this.col = col;
 
         // Set the cell's content to EMPTY by default
-        clear();
+        content = Player.Empty;
     }
 
     /** Paint itself on the graphics canvas, given the Graphics context g */
@@ -50,3 +50,4 @@ public class Cell {
         content = Player.Empty;
     }
 }
+this
