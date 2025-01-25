@@ -72,7 +72,7 @@ public class Board {
         }
 
         // Check if the player has 3 in the anti-diagonal (top-right to bottom-left)
-        if (cells[0][2].content == thePlayer &&
+        if  (cells[0][2].content == thePlayer &&
             cells[1][1].content == thePlayer &&
             cells[2][0].content == thePlayer) {
             return true; // Player wins by completing the anti-diagonal
