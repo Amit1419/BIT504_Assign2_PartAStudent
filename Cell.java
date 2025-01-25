@@ -50,4 +50,3 @@ int  row, col;
         content = Player.Empty;
     }
 }
-this
