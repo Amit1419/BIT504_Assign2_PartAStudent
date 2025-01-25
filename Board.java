@@ -70,16 +70,12 @@ public class Board {
             cells[2][2].content == thePlayer) {
             return true; // Player wins by completing the main diagonal
         }
-
         // Check if the player has 3 in the anti-diagonal (top-right to bottom-left)
-        if (cells[0][2].content == thePlayer &&
-            cells[1][1].content == thePlayer &&
-            cells[2][0].content == thePlayer) {
-            return true; // Player wins by completing the anti-diagonal
-        }
-
         // No winning condition met, game continues
-        return false;
+
+        return cells[0][2].content == thePlayer &&
+                cells[1][1].content == thePlayer &&
+                cells[2][0].content == thePlayer;
     }
 
     /**
